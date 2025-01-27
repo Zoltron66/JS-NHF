@@ -1,0 +1,50 @@
+{
+    "about": {
+        "name": "Zoltan Matus",
+        "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur provident quibusdam deleniti sit est soluta deserunt facilis totam doloribus maxime, impedit doloremque consequatur dolorum aut libero, ipsum ut placeat?"
+    },
+    "work_experience": [
+        {
+            "position_id": "we1",
+            "position_name": "Technician",
+            "business_name": "Intelliport Solutions Kft.",
+            "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur provident quibusdam deleniti sit est soluta deserunt facilis totam doloribus maxime, impedit doloremque consequatur dolorum aut libero, ipsum ut placeat?",
+            "date": "August, 2023 - ",
+            "d3_model_name": "Intelliport-3D.gltf"
+        },
+        {
+            "position_id": "we2",
+            "position_name": "Production Associate",
+            "business_name": "Bernstein Kft.",
+            "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur provident quibusdam deleniti sit est soluta deserunt facilis totam doloribus maxime, impedit doloremque consequatur dolorum aut libero, ipsum ut placeat?",
+            "date": "July, 2021 - August, 2021",
+            "d3_model_name": "Default.gltf"
+        },
+        {
+            "position_id": "we3",
+            "position_name": "Workshop Technician",
+            "business_name": "BKV Zrt.",
+            "about": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consectetur provident quibusdam deleniti sit est soluta deserunt facilis totam doloribus maxime, impedit doloremque consequatur dolorum aut libero, ipsum ut placeat?",
+            "date": "June, 2020 - July, 2020",
+            "d3_model_name": "Default.gltf"
+        },
+        {
+            "institution_id": "e2",
+            "highest_title": "Electronics Technician",
+            "institution_name": "BMSzC Bolyai János Technical School and College",
+            "institution_location": "Váci út 21Budapest, Budapest, 1134",
+            "date": "2022 - 2023",
+            "d3_model_name": "Default.gltf"
+        }
+    ],
+    "education": [
+        {
+            "institution_id": "e1",
+            "highest_title": "Electrical Engineer",
+            "institution_name": "Budapest University of Technology and Economics",
+            "institution_location": "Magyar Tudósok Körútja 2-Q épület, Budapest, 1117",
+            "date": "2023 - ",
+            "d3_model_name": "BME_Q_Building-3D.gltf"
+        }
+    ]
+}

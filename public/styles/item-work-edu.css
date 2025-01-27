@@ -1,0 +1,27 @@
+/* Main */
+.work-edu-c {
+    margin-top: 2ch;
+}
+.work-edu-c div {
+    display: flex;
+    flex-wrap: wrap;
+}
+.work-edu-c div div {
+    flex-direction: column;
+    width: fit-content;
+    margin: 2ch;
+    padding: 1ch;
+}
+
+.e-edu-work {
+    background-color: rgb(215, 199, 199);
+    margin: 4ch;
+    padding: 2ch;
+    display: flex;
+    border-radius: 1ch;
+}
+.e-edu-work div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4ch;
+}

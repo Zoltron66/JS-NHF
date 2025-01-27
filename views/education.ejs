@@ -1,0 +1,35 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/edu.css">
+
+<%- include('three_JSON-loader') -%>
+
+</head>
+<body>
+    <%- include('header') -%>
+<div class="support"></div>
+    <main id="main" class="edu">
+        <canvas id="canv"></canvas>
+        <ul>
+            <% let count = 0 %>
+            <% data.eduList.forEach((item, index) => { %>
+            <li id="l-<%= index + 1 %>" class="<%= item.d3_model_name %>">
+                <button id="left-arrow"><img src="/media/images/icons/Left_Arrow.svg" alt="Left arrow"></button>
+                <span id="s-<%= index + 1 %>" class="viewport-3d"></span>
+                <div id="d-<%= index + 1 %>" class="info">
+                    <div id="highest-t"><%= item.highest_title %></div>
+                    <div id="inst-name"><%= item.institution_name %></div>
+                    <div id="inst-loc"><%= item.institution_location %></div>
+                    <div id="date"><%= item.date %></div>
+                </div>
+                <button id="right-arrow"><img src="/media/images/icons/Right_Arrow.svg" alt="Right arrow"></button>
+            </li>
+            <% count++ }); %>
+        </ul>
+        <div id="SumM" class="<%= count %>"></div>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+    <script type="module" src="/scripts/three-manager.js"></script>
+</body>
+</html>

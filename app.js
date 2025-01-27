@@ -1,14 +1,25 @@
 const express = require('express');
-const path = require('path');
 const app = express();
-const PORT = process.env.PORT || 3000;
+const bodyParser = require('body-parser');
+//const session = require('express-session');
 
-app.use(express.static(path.join(__dirname, 'public')));
+const PORT = 3000;
 
+app.set('view engine', 'ejs');
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ 
+  extended: true 
+}));
+app.use(express.static('public'));
 
-require('./Routes/routeTask') (app);
+// Routing:
+require('./route/routes')(app);
 
+app.use((err, req, res, next) => {
+  res.end(`Problem: (${typeof err !== 'undefined' ? err : "Unknown"})`);
+  console.log(err);
+});
 
 app.listen(PORT, () => {
-  console.log(`A szerver fut a http://localhost:${PORT} címen`);
+  console.log(`http://localhost:${PORT}`);
 });

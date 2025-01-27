@@ -1,0 +1,43 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/admin.css">
+<link type="text/css" rel="stylesheet" href="/styles/item-work-edu.css">
+
+</head>
+<body>
+    <%- include('header') -%>
+    <main>
+        <form method="POST"  enctype="multipart/form-data">
+            <div class="e-edu-work">
+                <div>
+                    <label class="lab-title">Position Name</label>
+                    <input type="text" id="pos_name_inp" class="textbox-style <%= data.errPosNameMissing ? 'missing-cont' : '' %>" name="pos_name_inp" value="<%= (typeof work_expItem != 'undefined') ? work_expItem.position_name : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">Business Name</label>
+                    <input type="text" id="wp_name_inp" class="textbox-style <%= data.errWpNameMissing ? 'missing-cont' : '' %>" name="wp_name_inp" value="<%= (typeof work_expItem != 'undefined') ? work_expItem.business_name : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">Date</label>
+                    <input type="text" id="date_inp" class="textbox-style <%= data.errWDateMissing ? 'missing-cont' : '' %>" name="date_inp" value="<%= (typeof work_expItem != 'undefined') ? work_expItem.date : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">3D File</label>
+                    <input type="file" id="d3_modell_inp" class="textbox-style" name="d3_modell_inp">
+                    <label class="lab-upload" for="d3_modell_inp"><%= (typeof work_expItem != 'undefined') ? work_expItem.d3_model_name : 'Upload 3D file' %></label>
+                </div>
+                <div>
+                    <label class="lab-title">About</label>
+                    <textarea name="about_inp" id="about_inp" class="textbox-style <%= data.errWAboutMissing ? 'missing-cont' : '' %>" cols="50" rows="10"><%= (typeof work_expItem != 'undefined') ? work_expItem.about : '' %></textarea>
+                </div>
+            </div>
+            <div class="item-content">
+                <input type="submit" id="save" class="submit-bar" value="   Save   ">
+                <a href="/admin" id="cancel" class="submit-bar">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+</body>
+</html>
