@@ -1,0 +1,310 @@
+body {
+    background-image: linear-gradient(to top right, rgb(99, 80, 80), rgb(101, 21, 40));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(219, 219, 219) rgba(0, 0, 0, 0.585);
+    scrollbar-width: thin
+}
+
+.center-flex {
+    justify-content: center;
+    display: flex;
+}
+
+.mainbar {
+    display: flex;
+    position: fixed;
+    top: 5vh;
+    z-index: 1;
+}
+
+
+.navigation-buttons {
+    border: none;
+    padding: 0.5%;
+    padding-inline: 3%;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 2.7ch;
+    font-family: Verdana, Tahoma, sans-serif;
+    cursor: pointer;
+}
+
+.super-scrollbar {
+    scrollbar-color: rgb(92, 92, 92) rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+}
+
+.bar-effects {
+    border-radius: 4ch;
+    margin-left: 1ch;
+    margin-right: 1ch;
+    box-shadow: 0px 0px 5px black;
+    overflow: auto;
+}
+
+.navbar {
+    display: flex;
+    background-color: rgba(186, 186, 186, 0.6);
+    width: 40vw;
+    padding: 1ch;
+    justify-content: space-between;
+}
+
+.navbar button {
+    background:none;
+    margin-right: 0.4ch;
+    margin-left: 0.4ch;
+    color: rgb(235, 235, 235);
+    border-radius: 2ch;
+}
+
+.navbar button.active-site {
+    background-color: rgb(179, 49, 49);
+    box-shadow: 0px 0px 2px black;
+}
+
+.navbar button:hover {
+    background-color: rgba(121, 121, 121, 0.4);
+    box-shadow: 0px 0px 0px black;
+}
+.navbar button:active {
+    background-color: rgba(232, 232, 232, 0.4);
+}
+
+.admin-switch-h {
+    display: none;
+}
+
+button.admin-switch-s {
+    background-color: rgb(237, 237, 237);
+    color: rgb(37, 37, 37);
+    width: 15vw;
+}
+
+button.admin-switch-s:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+button.admin-switch-s:active {
+    background-color: rgb(15, 15, 15);
+    color: rgb(235, 235, 235);
+}
+
+main {
+    position: relative;
+    top: 25vh;
+}
+
+.main-components {
+    margin-left: 1ch;
+    margin-right: 1ch;
+    border-radius: 4ch;
+    display: flex;
+    align-items: center;
+    padding: 3ch;
+    box-shadow: 0px 0px 5px black;
+    color: rgb(235, 235, 235);
+}
+
+.button-profile-pos {
+    top: 14.2ch;
+    left: 1ch;
+}
+
+.button-edu-pos {
+    position: absolute;
+    top: 19ch;
+}
+
+
+button.edit{
+    margin: 0.2ch;
+    font-size: 2ch;
+    font-weight: bold;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: rgb(219, 163, 22);
+    border: none;
+    border-radius: 2ch;
+    position: relative;
+}
+
+button.edit:hover{
+    background-color: rgb(217, 187, 113);
+}
+
+button.edit:active{
+    background-color: rgb(255, 234, 182);
+}
+
+.authorName {
+    background-color: rgba(186, 186, 186, 0.6);
+    width: 30vw;
+    height: 50vh;
+    justify-content: center;
+    overflow: auto; 
+}
+
+.authorName div {
+    font-size: 15ch;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+    text-overflow: ellipsis;
+}
+
+.profileDescription {
+    background-color: rgba(186, 186, 186, 0.6);
+    width: 30vw;
+    height: 50vh;
+    overflow: auto; 
+}
+
+.profileDescription div {
+    font-size: 3.1ch;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+img.transparent-bg {
+    background-color: transparent;
+}
+
+li {
+    list-style-type: none;
+    position: relative;
+    z-index: 0;
+}
+
+.center-block {
+    justify-content: center;
+    display: block;
+    
+}
+
+div.institution-data div{
+    color:  rgb(235, 235, 235);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+div.institution-data div#title {
+    font-size: 3ch;
+    text-align: center;
+    font-weight: bold;
+}
+
+div.institution-data div#name {
+    font-size: 2ch;
+    text-align: center;
+    position:relative;
+    top: 35%;
+}
+
+
+div.institution-data div#date {
+    font-size: 2ch;
+    text-align: center;
+    position:relative;
+    top: 35%;
+}
+
+.w30vw-h50vh {
+    height: 50vh;
+    padding: 2ch;
+    overflow: hidden; 
+    margin-left: 1ch;
+    margin-right: 1ch;
+    margin-top: 4ch;
+    margin-bottom: 4ch;
+}
+
+li div.d3-viewport {
+    width: 30vw;
+}
+
+
+li div.institution-data {
+    width: 20vw;
+    background-color: rgba(74, 74, 74, 0.6);
+    border-radius: 4ch;
+}
+
+ul.horizontal-list {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+li.horizontal-list-item {
+    display: inline-block;
+    margin-left: 10ch;
+    margin-right: 10ch;
+    height: 55ch;
+}
+
+li.horizontal-list-item div.outer {
+    background-color: rgba(74, 74, 74, 0.6);
+    border-radius: 4ch;
+    height: 45ch;
+    width: 100ch;
+    padding: 3ch;
+    overflow: hidden;
+}
+
+div.outer div {
+    color: rgb(235, 235, 235);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+
+.horizontal-list-item div div.position-name {
+    color: rgb(209, 157, 61);
+    font-size: 4ch;
+    font-weight: bold;
+}
+
+.text-box-desc {
+    background-color: rgba(74, 74, 74, 0.6);
+    position: relative;
+    top: 2ch;
+    width: 35ch;
+    height: 20ch;
+    border-radius: 3ch;
+    padding: 2ch;
+    overflow: auto;
+    scrollbar-width: thin;
+}
+
+.horizontal-list-item div div.workplace-name {
+    font-size: 3ch;
+}
+
+div.description {
+    font-size: 2ch;
+    text-wrap: wrap;
+}
+
+
+.horizontal-list-item div div.date {
+    position: relative;
+    top: 3ch;
+    left: 14ch;
+    font-weight: bold;
+}
+
+.object-placeholder {
+    position: relative;
+    bottom: 36ch;
+    left: 40ch;
+}
+
+button.button-work-pos {
+    position: relative;
+    bottom: 38ch;
+    left: 68.7ch;
+}

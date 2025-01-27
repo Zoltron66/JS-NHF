@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZoltan's Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <nav class="center-flex">
+        <div class="mainbar">
+        <div class="navbar bar-effects super-scrollbar">
+            <button onclick="navigateTo('/')" class="navigation-buttons" id="Profile">Profile</button>
+            <button onclick="navigateTo('/workexperience')" class="navigation-buttons" id="WorkExp">Work Experience</button>
+            <button onclick="navigateTo('/educationadmin')" class="active-site navigation-buttons" id="Edu">Education</button>
+        </div>
+        <button class="admin-switch-h navigation-buttons bar-effects super-scrollbar">Normal mode</button>
+        </div>
+    </nav>
+    <main>
+        <ul class="center-block">
+            <li id="Apple" class="center-flex">
+                <div class="w30vw-h50vh d3-viewport">
+                    <img class="transparent-bg" src="Media/Images/placeholder.png">
+                </div>
+
+                <div class="w30vw-h50vh institution-data">
+                    <div id="title">
+                        Electrical Engineer
+                    </div>
+                    <div id="name">
+                        Massachusetts Institute of Technology
+                    </div>
+                    <div id="date">
+                         2017 - 2023
+                    </div>
+                </div>
+            </li>
+            <li id="Microsoft" class="center-flex">
+                <div class="w30vw-h50vh d3-viewport">
+                    <img class="transparent-bg" src="Media/Images/placeholder.png">
+                </div>
+
+                <div class="w30vw-h50vh institution-data">
+                    <div id="title">
+                        Graduation
+                    </div>
+                    <div id="name">
+                        Békéscsabai SZC Kós Károly Technikum and Vocational School
+                    </div>
+                    <div id="date">
+                         2012 - 2017
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script>
+        function navigateTo(path) {
+          window.location.href = path;
+        }
+      </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZoltan's Website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="scroll">
+    <nav class="center-flex">
+        <div class="mainbar">
+        <div class="navbar bar-effects super-scrollbar">
+            <button onclick="navigateTo('/')" class="navigation-buttons" id="Profile">Profile</button>
+            <button onclick="navigateTo('/workexperienceadmin')" class="active-site navigation-buttons" id="WorkExp">Work Experience</button>
+            <button onclick="navigateTo('/education')" class="navigation-buttons" id="Edu">Education</button>
+        </div>
+        <button class="admin-switch-h navigation-buttons bar-effects super-scrollbar">Normal mode</button>
+        </div>
+    </nav>
+    <main class="center-flex">
+        <ul class="horizontal-list super-scrollbar">
+            <li class="horizontal-list-item" id="Apple">
+                <div class="outer">
+                    <div class="position-name">
+                        Database administrator
+                    </div>
+                    <div class="workplace-name">
+                        Apple Inc.
+                    </div>
+                    <div class="text-box-desc">
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam eligendi natus architecto aliquam deserunt quis velit enim consequatur, voluptatibus, corrupti dicta minima aliquid? Eligendi quisquam temporibus laudantium ea dicta.
+                        </div>
+                    </div>
+                    <div class="date">
+                        2019 - 2023
+                    </div>
+                    <div class="w30vw-h50vh d3-viewport object-placeholder">
+                        <img class="transparent-bg" src="Media/Images/placeholder.png">
+                    </div>
+                </div>
+            </li>
+
+            <li class="horizontal-list-item" id="Microsoft">
+                <div class="outer">
+                    <div class="position-name">
+                        Marketing Manager
+                    </div>
+                    <div class="workplace-name">
+                        Microsoft Corporation.
+                    </div>
+                    <div class="text-box-desc">
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam eligendi natus architecto aliquam deserunt quis velit enim consequatur, voluptatibus, corrupti dicta minima aliquid? Eligendi quisquam temporibus laudantium ea dicta.
+                        </div>
+                    </div>
+                    <div class="date">
+                        2015 - 2019
+                    </div>
+                    <div class="w30vw-h50vh d3-viewport object-placeholder">
+                        <img class="transparent-bg" src="Media/Images/placeholder.png">
+                    </div>
+                </div>
+            </li>
+
+            <li class="horizontal-list-item" id="Toshiba">
+                <div class="outer">
+                    <div class="position-name">
+                        Database administrator
+                    </div>
+                    <div class="workplace-name">
+                        Toshiba Corporation.
+                    </div>
+                    <div class="text-box-desc">
+                        <div class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque nam eligendi natus architecto aliquam deserunt quis velit enim consequatur, voluptatibus, corrupti dicta minima aliquid? Eligendi quisquam temporibus laudantium ea dicta.
+                        </div>
+                    </div>
+                    <div class="date">
+                        2010 - 2015
+                    </div>
+                    <div class="w30vw-h50vh d3-viewport object-placeholder">
+                        <img class="transparent-bg" src="Media/Images/placeholder.png">
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script>
+        function navigateTo(path) {
+          window.location.href = path;
+        }
+      </script>
+</body>
+</html>

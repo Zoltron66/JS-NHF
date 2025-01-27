@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZoltan's Website</title>
+    <link rel="stylesheet" href="admin-style.css">
+
+</head>
+<body>
+    <nav class="center-flex">
+        <div class="mainbar">
+        <div class="navbar bar-effects super-scrollbar">
+            <button onclick="navigateTo('/')" class="active-site navigation-buttons" id="Profile">Profile</button>
+            <button onclick="navigateTo('/workexperienceadmin')" class="navigation-buttons" id="WorkExp">Work Experience</button>
+            <button onclick="navigateTo('/educationadmin')" class="navigation-buttons" id="Edu">Education</button>
+        </div>
+        <button class="admin-switch-s navigation-buttons bar-effects super-scrollbar">Normal mode</button>
+        </div>
+    </nav>
+    <main class="center-flex">
+        <div class="authorName main-components super-scrollbar">
+            <div>Zoltan Matus</div>
+            <button class="button-profile-pos edit" id="nameEdit">E</button>
+        </div>
+        <div class="profileDescription main-components super-scrollbar">
+            <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus corrupti vel perferendis facilis obcaecati doloribus quia? Modi culpa quidem, repellendus voluptatum voluptate quasi explicabo perferendis blanditiis dolorem asperiores veritatis voluptas! Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <button class="button-profile-pos edit" id="descEdit">E</button>
+        </div>
+    </main>
+    <script>
+        function navigateTo(path) {
+          window.location.href = path;
+        }
+      </script>
+</body>
+</html>
