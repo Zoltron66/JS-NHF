@@ -1,0 +1,43 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/admin.css">
+<link type="text/css" rel="stylesheet" href="/styles/item-work-edu.css">
+
+</head>
+<body>
+    <%- include('header') -%>
+    <main>
+        <form method="POST">
+            <div class="e-edu-work">
+                <div>
+                    <label class="lab-title">Educational title</label>
+                    <input type="text" id="edu_name_e_inp" class="textbox-style <%= data.errEduNameMissing ? 'missing-cont' : '' %>" name="edu_name_e_inp" value="<%= (typeof eduItem !== 'undefined') ? eduItem.highest_title : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">Institution Name</label>
+                    <input type="text" id="inst_name_e_inp" class="textbox-style <%= data.errEduInstMissing ? 'missing-cont' : '' %>" name="inst_name_e_inp" value="<%= (typeof eduItem !== 'undefined') ? eduItem.institution_name : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">Institution Location</label>
+                    <input type="text" id="inst_loc_e_inp" class="textbox-style <%= data.errInstLocMissing ? 'missing-cont' : '' %>" name="inst_loc_e_inp" value="<%= (typeof eduItem !== 'undefined') ? eduItem.institution_location : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">Date</label>
+                    <input type="text" id="date_e_inp" class="textbox-style <%= data.errEDateMissing ? 'missing-cont' : '' %>" name="date_e_inp" value="<%= (typeof eduItem !== 'undefined') ? eduItem.date : '' %>">
+                </div>
+                <div>
+                    <label class="lab-title">3D File</label>
+                    <input type="file" id="d3_modell_inp" class="textbox-style" name="filename">
+                    <label class="lab-upload" for="d3_modell_inp"><%= (typeof eduItem !== 'undefined') ? eduItem.d3_model_name : 'Upload .gltf file' %></label>
+                </div>
+            </div>
+            <div class="item-content">
+                <input type="submit" id="save" class="submit-bar" value="   Save   ">
+                <a href="/admin" id="cancel" class="submit-bar">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+</body>
+</html>

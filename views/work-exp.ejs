@@ -1,0 +1,33 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/work-exp-mc.css">
+
+<%- include('three_JSON-loader') -%>
+
+</head>
+<body>
+    <%- include('header') -%>
+
+    <main id="main" class="work">
+        <canvas id="canv"></canvas>
+        <ul>
+            <% let count = 0 %>
+            <% data.workExpList.forEach((item, index) => { %>
+            <li id="l-<%= index + 1 %>" class="<%= item.d3_model_name %>">
+                <span id="s-<%= index + 1 %>" class="viewport-3d <%= (index % 2) ? 'right' : 'left' %>"></span>
+                <div id="d-<%= index + 1 %>" class="info <%= (index % 2) ? 'left' : 'right' %>">
+                    <div id="pos-n"><%= item.position_name %></div>
+                    <div id="workp-n"><%= item.business_name %></div>
+                    <div id="i"><%= item.about %></div>
+                    <div id="date"><%= item.date %></div>
+                </div>
+            </li>
+            <% count++ }); %>
+        </ul>
+        <div id="SumM" class="<%= count %>"></div>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+    <script type="module" src="/scripts/three-manager.js"></script>
+</body>
+</html>

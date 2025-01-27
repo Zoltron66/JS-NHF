@@ -1,0 +1,38 @@
+<li>
+
+    <h1>Education</h1>
+    <ul>
+        <% data.eduList.forEach((item, index) => { %>
+        <li class="work-edu-c content-b">
+            <div>
+                <div>
+                    <label class="lab-title">Educational title</label>
+                    <label class="lab-cont"><%= item.highest_title %></label>
+                </div>
+                <div>
+                    <label class="lab-title">Institution Name</label>
+                    <label class="lab-cont"><%= item.institution_name %></label>
+                </div>
+                <div>
+                    <label class="lab-title">Institution Location</label>
+                    <label class="lab-cont"><%= item.institution_location %></label>
+                </div>
+                <div>
+                    <label class="lab-title">Date</label>
+                    <label class="lab-cont"><%= item.date %></label>
+                </div>
+                <div>
+                    <label class="lab-title">3D File</label>
+                    <label class="lab-cont"><%= item.d3_model_name %></label>
+                </div>
+            </div>
+            <div class="edit-buttons">
+                <a href="/admin/edu_edit/<%= item._id %>" id="edit-work" class="media-icon"><img src="/media/images/icons/Edit.svg" alt="Edit"></a>
+                <a href="/admin/edu_del/<%= item._id %>" id="del-work" class="media-icon"><img src="/media/images/icons/Delete.svg" alt="Delete"></a>
+            </div>
+        </li>
+        <% }); %>
+    </ul>
+    <div class="item-content"><a href="/admin/edu_new" class="plus-item"><img src="/media/images/icons/Plus.svg" alt="Add item"></a></div>
+
+</li>

@@ -1,0 +1,22 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/admin.css">
+<link type="text/css" rel="stylesheet" href="/styles/item-main.css">
+<link type="text/css" rel="stylesheet" href="/styles/item-work-edu.css">
+
+</head>
+<body>
+    <%- include('header') -%>
+    <main>
+        <form method="POST">
+            <ul id="pages">
+                <%- include('item-main') -%>
+                <%- include('item-work-exp') -%>
+                <%- include('item-edu') -%>
+            </ul>
+        </form>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+</body>
+</html>

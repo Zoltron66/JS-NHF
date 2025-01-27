@@ -1,0 +1,20 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    scrollbar-color: rgb(224, 224, 224) rgb(49, 52, 50);
+    scrollbar-width: thin;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.test-image {
+    height: 200%;
+}
+
+a {
+    user-select: none;
+}

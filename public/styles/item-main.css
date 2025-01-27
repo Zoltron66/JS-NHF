@@ -1,0 +1,26 @@
+/* Main */
+.main-c {
+    margin-top: 2ch;
+}
+.main-c div {
+    display: flex;
+}
+.main-c div div {
+    flex-direction: column;
+    width: min-content;
+    margin: 2ch;
+    padding: 1ch;
+}
+
+.e-home {
+    background-color: rgb(215, 199, 199);
+    margin: 4ch;
+    padding: 2ch;
+    display: flex;
+    border-radius: 1ch;
+}
+.e-home div {
+    display: flex;
+    flex-direction: column;
+    margin-right: 4ch;
+}

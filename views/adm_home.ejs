@@ -1,0 +1,30 @@
+<%- include('basics') -%>
+<%- include('css_pack') -%>
+
+<link type="text/css" rel="stylesheet" href="/styles/admin.css">
+<link type="text/css" rel="stylesheet" href="/styles/item-main.css">
+
+</head>
+<body>
+    <%- include('header') -%>
+    <main>
+        <form method="POST">
+            <div class="e-home">
+                <div>
+                    <label class="lab-title">Name</label>
+                    <input type="text" id="name_inp" class="textbox-style <%= data.errNameMissing ? 'missing-cont' : '' %>" name="name_inp" value="<%= data.ownerName %>">
+                </div>
+                <div>
+                    <label class="lab-title">About Me</label>
+                    <textarea name="info_inp" id="info_inp" class="textbox-style <%= data.errInfoMissing ? 'missing-cont' : '' %>" cols="60" rows="10"><%= data.ownerInfo %></textarea>
+                </div>
+            </div>
+            <div class="item-content">
+                <input type="submit" id="save" class="submit-bar" value="   Save   ">
+                <a href="/admin" id="cancel" class="submit-bar">Cancel</a>
+            </div>
+        </form>
+    </main>
+    <script src="/scripts/header-design-manager.js" ></script>
+</body>
+</html>
